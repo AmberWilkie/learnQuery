@@ -11,6 +11,7 @@ describe('Selector', function() {
     var selector = '.some-element-not-in-the-dom';
 
     // We're calling $.makeArray because we need to transform jQuery result set into real array object
+    // I believe they're using jQuery here to make sure you are actually duplicating jQuery stuff.
     var expectedSelectedElement = $.makeArray($(selector));
     var selectedElement = domSelector(selector);
 
