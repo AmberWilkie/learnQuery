@@ -13,6 +13,7 @@ describe('CssClassManipulation', function() {
   });
 
   it('should add a css class to the element', function() {
+    console.log(cssClass);
     cssClass.add(selectedElement, 'building');
     expect($selectedElement.hasClass('building')).toBe(true);
   });
